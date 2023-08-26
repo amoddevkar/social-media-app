@@ -1,0 +1,160 @@
+.main-container {
+  height: 98vh;
+  width: 25vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 480px) {
+  .main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    border-radius: 0px;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .search-div {
+    position: fixed;
+    left: 25vh;
+    top: 2vh;
+  }
+}
+
+.search-div {
+  position: fixed;
+  left: 107vh;
+  top: 4vh;
+}
+
+/* .search-div input {
+  width: 10px;
+} */
+.post-container {
+  overflow: auto;
+}
+
+.post-container::-webkit-scrollbar {
+  display: none;
+}
+
+.post {
+  background-color: white;
+  padding: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: small;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.post-actions img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.post-caption {
+  font-size: small;
+}
+/* ... (previous styles) */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.header img {
+  max-height: 40px;
+  background: #fff;
+}
+
+.header input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.story-wrapper {
+  overflow: hidden;
+  min-height: 107px;
+}
+
+.story-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.story-bar {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: white;
+  overflow: auto;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ff9800;
+}
+
+.story-username {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.bottom-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-navbar i {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
